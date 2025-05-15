@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Síguenos en nuestras redes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .social-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-card:hover {
+      transform: scale(1.02);
+    }
+
+    .social-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-info img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .visit-button {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .back-button {
+      margin-top: 25px;
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Síguenos en nuestras redes</h2>
+
+    <div class="social-card">
+      <div class="social-info">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" />
+        <span>Facebook</span>
+      </div>
+      <a href="https://www.facebook.com/share/1BZrZDJJMb/?mibextid=wwXIfr" target="_blank">
+        <button class="visit-button">Visitar</button>
+      </a>
+    </div>
+
+    <div class="social-card">
+      <div class="social-info">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+        <span>TikTok</span>
+      </div>
+      <a href="https://www.tiktok.com/@maluco_py1?_t=ZM-8w8epwk5EyE&_r=1" target="_blank">
+        <button class="visit-button">Visitar</button>
+      </a>
+    </div>
+
+    <div class="social-card">
+      <div class="social-info">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+        <span>Instagram</span>
+      </div>
+      <a href="https://www.instagram.com/maluco_ayolas?igsh=dHc0M3N4Mm0wNXly&utm_source=qr" target="_blank">
+        <button class="visit-button">Visitar</button>
+      </a>
+    </div>
+
+    <div class="social-card">
+      <div class="social-info">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+        <span>WhatsApp</span>
+      </div>
+      <a href="https://wa.me/+5950975480896" target="_blank">
+        <button class="visit-button">Visitar</button>
+      </a>
+    </div>
+
+    <button class="back-button" onclick="window.history.back()">⬅ Volver</button>
+  </div>
+</body>
+</html>
