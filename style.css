@@ -1,0 +1,156 @@
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.0rem;
+}
+
+.producto {
+  flex: 1 1 calc(48% - 10px); /* Para que quepan 2 por fila */
+  background-color: #fff;
+  border: 1px solid #d8ce07;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  padding: 12px;
+  max-width: 220px; /* Evita que se pasen en pantallas chicas */
+  box-sizing: border-box;
+}
+
+.producto img {
+  width: 105%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.boton {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* 3 productos por fila en pantallas medianas para arriba */
+@media (min-width: 768px) {
+  .producto {
+    flex: 1 1 calc(31% - 10px);
+    max-width: 250px;
+  }
+}@media (max-width: 480px) {
+  .encabezado {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .logo {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+.encabezado {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.titulo {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  gap: 5;
+}
+
+.redes-fijas {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.redes-fijas img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.redes-fijas img:hover {
+  transform: scale(1.1);
+}
+.redes-sociales {
+  position: fixed;
+  bottom: 9px; /* Más abajo de la barra */
+  right: 9px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 0px;
+  z-index: 999;
+  background: rgba(11, 11, 10, 0.212);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.etiqueta-agotado {
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  z-index: 10;
+}
+
+/* Asegurate que el contenedor tenga position: relative */
+.producto {
+  position: relative;
+}
+.barra-redes {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .barra-redes a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
