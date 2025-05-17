@@ -75,7 +75,7 @@
       <!-- Aquí vas a agregar tus productos de calzados -->
     </div>
   <main class="productos">
-  <!-- Producto 1 -->
+    <!-- Producto 1 -->
     <div class="producto">
       <img src="campera-con-aricular.webp" alt="campera-con-aricular.webp">
       <div class="info">
@@ -149,7 +149,7 @@
 
 <!-- Producto 7 -->
 <div class="producto">
-  <img src="short-color-marron.png" alt="short-color-marron.png">
+  <img src="short-color-marron.webp" alt="short-color-marron.webp">
   <div class="info">
     <p>short color marron</p>
     <p class="precio">Gs. 000.000</p>
@@ -170,4 +170,54 @@
     </a>
   </div>
 </div>
+<!-- Producto 9 -->
+<div class="producto">
+  <div class="carrusel">
+    <img src="Imagen-de-WhatsApp-2025-05-15-a-las-08.38.png" class="slide active" alt="Vista 1" loading="lazy">
+    <img src="Imagen-de-WhatsApp-2025-05-15-a-las-yr.png" class="slide" alt="Vista 2" loading="lazy">
+    <button class="prev" onclick="moverCarrusel(this, -1)">‹</button>
+    <button class="next" onclick="moverCarrusel(this, 1)">›</button>
+  </div>
+  <div class="info">
+    <p>Campera rompe viento capucha</p>
+    <p class="precio">Gs. 000.000</p>
+    <a class="boton" href="https://wa.me/5950975480896?text=Hola! Quiero comprar la campera rompe viento" target="_blank">
+      Comprar ahora
+    </a>
+  </div>
+</div>
 
+<!-- Producto 10 -->
+<div class="producto">
+  <div class="carrusel">
+    <img src="Imagen-de-WhatsApp-2025-05-15-a-las-08..png" class="slide active" alt="Vista 1" loading="lazy">
+    <img src="Imagen-de-WhatsApp-2025-05-15-a-las-08.21.png" class="slide" alt="Vista 2" loading="lazy">
+    <button class="prev" onclick="moverCarrusel(this, -1)">‹</button>
+    <button class="next" onclick="moverCarrusel(this, 1)">›</button>
+  </div>
+  <div class="info">
+    <p>Campera rompe viento capucha</p>
+    <p class="precio">Gs. 000.000</p>
+    <a class="boton" href="https://wa.me/5950975480896?text=Hola! Quiero comprar la campera rompe viento" target="_blank">
+      Comprar ahora
+    </a>
+  </div>
+</div>
+
+    
+
+  <!-- Script funcional al final -->
+  <script>
+    function moverCarrusel(btn, dir) {
+      const carrusel = btn.closest('.carrusel');
+      const slides = carrusel.querySelectorAll('.slide');
+      let index = [...slides].findIndex(slide => slide.classList.contains('active'));
+
+      slides[index].classList.remove('active');
+      index = (index + dir + slides.length) % slides.length;
+      slides[index].classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
