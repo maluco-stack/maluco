@@ -8,8 +8,8 @@
 
 .producto {
   flex: 1 1 calc(48% - 10px); /* Para que quepan 2 por fila */
-  background-color: #fff;
-  border: 1px solid #d8ce07;
+  background-color: #ffffff00;
+  border: 1px solid #fff201;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .boton {
-  background-color: #25d366;
+  background-color: hwb(131 6% 30%);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -191,4 +191,16 @@
 
 .carrusel .next {
   right: 5px;
+}
+@keyframes pulso {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.producto.pulso {
+  animation: pulso 2s infinite ease-in-out;
 }
